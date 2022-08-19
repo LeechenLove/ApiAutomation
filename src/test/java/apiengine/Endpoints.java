@@ -1,6 +1,7 @@
 package apiengine;
 
 import configs.ConfigReader;
+import configs.Constants;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -19,13 +20,12 @@ import pojo.response.UserAccount;
  * @DateTime: 2022/8/14 15:50
  **/
 public class Endpoints {
-    private static final String BASE_URL = ConfigReader.getInstance().getBaseUrl();
     private final RequestSpecification request;
 
     public Endpoints(String baseUrl) {
         RestAssured.baseURI = baseUrl;
         request = RestAssured.given();
-        request.header("Content-Type", "application/json");
+        request.header("Content-Type", Constants.CONTENT_TYPE_JSON);
     }
 
     public void authenticateUser(AuthorizationRequest authRequest) {

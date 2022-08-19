@@ -4,7 +4,7 @@ import io.restassured.response.Response;
 
 /**
  * @Author: Lulu
- * @Description: TODO
+ * @Description: 处理不同response返回的数据的泛型类
  * @DateTime: 2022/8/14 17:01
  **/
 public class RestResponse<T> implements IRestResponse<T> {

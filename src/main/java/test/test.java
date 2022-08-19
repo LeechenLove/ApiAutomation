@@ -18,5 +18,7 @@ public class test {
         map.put("test2", "name2");
         list.add(map);
         System.out.println(list);
+        String str = "tes;t";
+        System.out.println(str.split(";")[1]);
     }
 }
