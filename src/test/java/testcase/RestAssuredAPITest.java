@@ -187,7 +187,6 @@ public class RestAssuredAPITest {
 
         response.prettyPrint();
         JsonPath jsonPath = response.jsonPath();
-//        List<String> list = jsonPath.getList("")
         String param1 = jsonPath.get("args.foo1");
         String param2 = jsonPath.get("args.foo2");
         Assert.assertEquals(param1, paramMap.get("foo1"));
