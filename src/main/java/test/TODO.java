@@ -12,4 +12,5 @@ public class TODO {
     // TODO: Testrunner maven执行测试 done
     // TODO: 读取excel数据，作为测试数据 done
     // TODO: 集成日志系统
+    // 使用Jenkins 构建测试
 }
