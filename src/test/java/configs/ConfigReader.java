@@ -8,7 +8,7 @@ import java.util.Properties;
 
 /**
  * @Author: Lulu
- * @Description: TODO
+ * @Description: 读取配置文件
  * @DateTime: 2022/8/14 21:51
  **/
 public class ConfigReader {
