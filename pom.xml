@@ -95,6 +95,10 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.20.1</version>
                 <configuration>
+                    <!--跳过测试代码执行-->
+                    <!--<skipTests>true</skipTests>-->
+                    <!--忽略测试代码执行失败-->
+                    <testFailureIgnore>true</testFailureIgnore>
                     <suiteXmlFiles>
                         <!--suppress UnresolvedMavenProperty -->
                         <suiteXmlFile>${testset}</suiteXmlFile>
