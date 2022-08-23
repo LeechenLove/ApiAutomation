@@ -1,5 +1,10 @@
+String schedule = BRANCH_NAME == "master" ? "00 23 * * *" : ""
 pipeline {
     agent any
+    options {
+        retry(3)
+    }
+    triggers{corn(schedule)}
     stages {
         stage('checkout') {
             steps {
