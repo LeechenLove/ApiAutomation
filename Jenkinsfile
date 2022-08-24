@@ -3,7 +3,7 @@ pipeline {
     options {
         retry(3)
     }
-    triggers{cron('0 0 9 * * ?')}
+    triggers{cron('H/15 * * * *')}
     stages {
         stage('checkout') {
             steps {
