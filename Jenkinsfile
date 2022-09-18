@@ -48,7 +48,7 @@ pipeline {
 
         stage('mvn build_id') {
             steps {
-                bat 'mvn clean test -Dtestset=${TESTSET} -P${ENV}'
+                sh 'mvn clean test -Dtestset=${TESTSET} -P${ENV}'
             }
 
             post {
