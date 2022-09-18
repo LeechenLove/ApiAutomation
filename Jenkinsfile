@@ -34,7 +34,7 @@ pipeline {
                     steps {
                         echo "打印信息"
                         echo "jenkins任务名: ${JOB_NAME}"
-                        echo "测试环境: ${ACTION}"
+                        echo "测试环境: ${ENV}"
                         echo "build_id: ${BUILD_ID}"
                         echo "工作空间: ${WORKSPACE}"
                    }
