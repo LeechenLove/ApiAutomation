@@ -111,10 +111,10 @@ public class RestAssuredAPITest {
         RestAssured.baseURI = "https://petstore3.swagger.io/api/v3/store";
         RequestSpecification httpRequest = given();
         JSONObject requestParams = new JSONObject();
-        requestParams.put("id", "11");
+        requestParams.put("id", "10");
         requestParams.put("petId", "123456");
         requestParams.put("quantity", "7");
-        requestParams.put("shipDate", "2022-08-10T12:04:09.926+00:00");
+        requestParams.put("shipDate", "2022-09-18T09:44:25.193Z");
         requestParams.put("status", "approved");
         requestParams.put("complete", "true");
         httpRequest.header("Content-Type", "application/json");

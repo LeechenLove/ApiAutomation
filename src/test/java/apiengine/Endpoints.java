@@ -1,6 +1,5 @@
 package apiengine;
 
-import configs.ConfigReader;
 import configs.Constants;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;

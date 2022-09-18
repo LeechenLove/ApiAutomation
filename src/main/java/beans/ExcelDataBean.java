@@ -6,6 +6,7 @@ package beans;
  * @DateTime: 2022/8/21 9:48
  **/
 public class ExcelDataBean extends BaseBean{
+    private String caseno;
     private boolean run;
     private String desc; // 接口描述
     private String url;
@@ -17,6 +18,11 @@ public class ExcelDataBean extends BaseBean{
     private String save;
     private String preParam;
     private int sleep;
+    private String contenttype;
+
+    public void setCaseno(String caseno) {this.caseno=caseno;}
+
+    public String getCaseno() {return caseno;}
 
     public boolean isRun() {
         return run;
@@ -105,6 +111,10 @@ public class ExcelDataBean extends BaseBean{
     public void setSleep(int sleep) {
         this.sleep = sleep;
     }
+
+    public void setContentType(String contenttype) {this.contenttype = contenttype;}
+
+    public String getContentType() {return contenttype;}
 
     @Override
     public String toString() {

@@ -30,6 +30,7 @@ public class TestExcel extends TestBase{
     @Test(dataProvider = "apiDatas")
     public void test(ExcelDataBean excelDataBean) {
         System.out.println(excelDataBean.getDesc());
+        System.out.println(excelDataBean.getMethod());
     }
 
     @DataProvider(name = "apiDatas")
