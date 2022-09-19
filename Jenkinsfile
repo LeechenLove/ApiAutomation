@@ -51,11 +51,11 @@ pipeline {
                 sh 'mvn clean test -Dtestset=${TESTSET} -P${ENV}'
             }
 
-            post {
-               always {
-                 step([$class: 'Publisher', reportFilenamePattern: '**/testng-results.xml'])
-               }
-             }
+//             post {
+//                always {
+//                  step([$class: 'Publisher', reportFilenamePattern: '**/testng-results.xml'])
+//                }
+//              }
         }
     }
 }
