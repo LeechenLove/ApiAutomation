@@ -122,6 +122,8 @@
                     <!--跳过测试代码执行-->
                     <!--<skipTests>true</skipTests>-->
                     <!--忽略测试代码执行失败-->
+                    <forkMode>once</forkMode>
+                    <argLine>-Dfile.encoding=UTF-8 -Xmx1024m -XX:MaxPermSize=256m</argLine>
                     <testFailureIgnore>true</testFailureIgnore>
                     <suiteXmlFiles>
                         <!--suppress UnresolvedMavenProperty -->
