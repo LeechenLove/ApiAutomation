@@ -105,7 +105,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
-                <version>2.6</version>
+                <version>3.2.0</version>
                 <configuration>
                     <nonFilteredFileExtensions>
                         <!-- 不对xls进行转码 -->
@@ -122,8 +122,8 @@
                     <!--跳过测试代码执行-->
                     <!--<skipTests>true</skipTests>-->
                     <!--忽略测试代码执行失败-->
-<!--                    <forkMode>once</forkMode>-->
-<!--                    <argLine>-Dfile.encoding=UTF-8 -Xmx1024m -XX:MaxPermSize=256m</argLine>-->
+                    <forkMode>once</forkMode>
+                    <argLine>-Dfile.encoding=UTF-8 -Xmx1024m -XX:MaxPermSize=256m</argLine>
                     <testFailureIgnore>true</testFailureIgnore>
                     <suiteXmlFiles>
                         <!--suppress UnresolvedMavenProperty -->
