@@ -14,7 +14,7 @@ public class ConfigReader {
 
     //编译后的配置文件
     private ConfigReader(){
-        InputStream stream = this.getClass().getClassLoader().getResourceAsStream("\\env.properties");
+        InputStream stream = this.getClass().getClassLoader().getResourceAsStream("env.properties");
         try {
             try{
                 properties = new Properties();
